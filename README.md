@@ -1,8 +1,8 @@
 # SweetiesProject  ♥
 # Member
 - กัลยวรรธน์ เฉลิมไทย 6409490056
--
--
+- บัวชมพู	ประถานัง	6409610646
+- ณหทัย	บุญรอด	6409682686
 # Pages & Features
 # 1. Login
 - username : admin
