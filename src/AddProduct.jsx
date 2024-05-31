@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import axios from 'axios';
 import './index.css';
-import api from './api';
+import api from './libs/api';
 import { useNavigate } from 'react-router-dom';
 import AuthContext from './AuthContext';
 
@@ -87,8 +87,8 @@ const AddProduct = () => {
                 <form onSubmit={handleSubmit} className="add-product-form">
                     <div className="form-group">
                         <label>Product Name:</label>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             required
                             value={productName}
                             onChange={(e) => setProductName(e.target.value)}
@@ -105,7 +105,7 @@ const AddProduct = () => {
                     </div>
                     <div className="form-group">
                         <label>Product Description:</label>
-                        <textarea 
+                        <textarea
                             required
                             value={productDescription}
                             onChange={(e) => setProductDescription(e.target.value)}

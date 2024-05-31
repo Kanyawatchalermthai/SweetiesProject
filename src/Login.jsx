@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import './index.css';
 import AuthContext from './AuthContext';
 import axios from 'axios';
-import api from './api';
+import api from './libs/api';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -41,7 +41,7 @@ function Login() {
                 axios.defaults.headers.common["Authorization"] = `Bearer ${res.data.token}`;
                 setAuth(true);
                 alert('done!')
-                navigate('/') 
+                navigate('/')
             } else {
                 delete axios.defaults.headers.common["Authorization"];
                 setAuth(false);

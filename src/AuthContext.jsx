@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, Children } from 'react';
 import axios from 'axios';
-import { isAuth } from './isAuth';
+import { isAuth } from './libs/isAuth';
 
 const AuthContext = createContext();
 

@@ -1,4 +1,4 @@
-import Menu from './Menu'
+import NavBar from './NavBar'
 import './index.css'
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const ProductBlogs = ({ products }) => {
                             <img src={`uploads/${product.picture}`} alt={product.productName} className="product-image" />
                             <div className="product-info">
                                 <h2 className="product-name">{product.productName}</h2>
-                                <p className="product-price">Price: {product.productPrice} Bath</p> 
+                                <p className="product-price">{product.productPrice} ฿</p>
                                 {console.log(product.picture)}
                             </div>
                         </Link>
